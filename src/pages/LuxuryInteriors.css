@@ -1,0 +1,236 @@
+.luxury-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background: #2b0d3a; /* deep purple */
+  color: #fff;
+  min-height: 100vh;
+}
+
+.luxury-image {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.luxury-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.luxury-content {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.luxury-content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.luxury-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.luxury-btn {
+  background: #d7a740; /* gold */
+  color: #2b0d3a;
+  border: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.luxury-btn:hover {
+  background: #b88a2d;
+  transform: translateY(-2px);
+}
+
+/* Overlay background */
+.luxury-form-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* Form container */
+.luxury-form-container {
+  position: relative;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+/* The only close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Bottom Section */
+.luxury-bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 100px;
+  background: #e9e0d3; /* beige */
+}
+
+.bottom-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.bottom-text h2 {
+  font-size: 36px;
+  color: #3b0d3c;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.bottom-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.bottom-image {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+/* Golden Arch */
+.gold-arch {
+  display: inline-block;
+  padding: 10px;
+  border: 3px solid #d7a740;
+  border-radius: 50% 50% 0 0 / 90% 90% 0 0;
+  overflow: hidden;
+  max-width: 380px;
+}
+
+.gold-arch img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: inherit;
+}
+/* NEW Form Styles - Compact Version */
+.new-luxury-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* less space between fields */
+}
+
+.new-luxury-form h3 {
+  font-size: 22px;
+  color: #2b0d3a;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.new-luxury-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #2b0d3a;
+}
+
+.required-asterisk {
+  color: red;
+  margin-left: 2px;
+  font-weight: bold;
+}
+
+.new-luxury-form input,
+.new-luxury-form textarea {
+  padding: 8px 12px; /* smaller padding */
+  font-size: 14px;  /* smaller font */
+  border: 2px solid #d7a740;
+  border-radius: 8px;
+  outline: none;
+}
+
+.new-luxury-form textarea {
+  min-height: 60px; /* shorter textarea */
+  resize: vertical;
+}
+
+.new-luxury-form button {
+  background: #d7a740;
+  color: #2b0d3a;
+  border: none;
+  padding: 10px 0; /* less height */
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-luxury-form button:hover {
+  background: #b88a2d;
+  transform: translateY(-1px);
+}
+
+/* Form container */
+.luxury-form-container {
+  max-width: 450px; /* slightly smaller width */
+  width: 90%;
+  padding: 20px; /* less padding */
+}
+
+.new-luxury-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #2b0d3a;
+}
+
+.required-asterisk {
+  color: red;
+  margin-left: 2px;
+  font-weight: bold;
+}

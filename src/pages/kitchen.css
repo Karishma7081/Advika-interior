@@ -1,0 +1,450 @@
+/* Hero Section */
+.kitchen-hero {
+  position: relative;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 0 8%;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 55%;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  padding: 12px 28px;
+  background: #e63946;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.hero-content button:hover {
+  background: #c92f3d;
+}
+
+/* Consultation Form */
+.hero-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  width: 340px;
+}
+
+.hero-form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.hero-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.hero-form button {
+  width: 100%;
+  padding: 12px;
+  background: #e63946;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-form button:hover {
+  background: #c92f3d;
+}
+
+/* Responsive Hero */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-form {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Info Section */
+.kitchen-info {
+  padding: 50px 20px;
+  text-align: center;
+}
+.kitchen-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #e63946;
+}
+.kitchen-info p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Carousel Section */
+.kitchen-layouts {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.carousel-title {
+  font-size: 2rem;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+.carousel-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.kitchen-cards-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.kitchen-cards-row::-webkit-scrollbar {
+  display: none;
+}
+
+.kitchen-card {
+  flex: 0 0 calc(33.33% - 20px);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.kitchen-card:hover {
+  transform: translateY(-5px);
+}
+.kitchen-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.kitchen-card h3 {
+  font-size: 1.2rem;
+  margin: 12px 15px 5px;
+  color: #222;
+}
+.kitchen-card p {
+  font-size: 0.95rem;
+  margin: 0 15px 15px;
+  color: #666;
+}
+
+/* Carousel Button (Right Only) */
+.carousel-btn.right {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Responsive Cards */
+@media (max-width: 992px) {
+  .kitchen-card {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .kitchen-card {
+    flex: 0 0 100%;
+  }
+}
+/* Hero Section */
+.kitchen-hero {
+  position: relative;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 0 8%;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 55%;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  padding: 12px 28px;
+  background: #e63946;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.hero-content button:hover {
+  background: #c92f3d;
+}
+
+/* Consultation Form */
+.hero-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  width: 340px;
+}
+
+.hero-form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.hero-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.hero-form button {
+  width: 100%;
+  padding: 12px;
+  background: #e63946;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-form button:hover {
+  background: #c92f3d;
+}
+
+/* Responsive Hero */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-form {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Info Section */
+.kitchen-info {
+  padding: 50px 20px;
+  text-align: center;
+}
+.kitchen-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #e63946;
+}
+.kitchen-info p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Carousel Section (shared for layouts + components) */
+.kitchen-layouts,
+.kitchen-components {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.carousel-title {
+  font-size: 2rem;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+.carousel-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.kitchen-cards-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.kitchen-cards-row::-webkit-scrollbar {
+  display: none;
+}
+
+.kitchen-card {
+  flex: 0 0 calc(33.33% - 20px);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.kitchen-card:hover {
+  transform: translateY(-5px);
+}
+.kitchen-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.kitchen-card h3 {
+  font-size: 1.2rem;
+  margin: 12px 15px 5px;
+  color: #222;
+}
+.kitchen-card p {
+  font-size: 0.95rem;
+  margin: 0 15px 15px;
+  color: #666;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.carousel-btn.left {
+  left: 15px;
+}
+.carousel-btn.right {
+  right: 15px;
+}
+
+/* Responsive Cards */
+@media (max-width: 992px) {
+  .kitchen-card {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .kitchen-card {
+    flex: 0 0 100%;
+  }
+}

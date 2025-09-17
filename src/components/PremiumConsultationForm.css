@@ -1,0 +1,364 @@
+.premium-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: flex-end; /* Right-aligned on desktop */
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.premium-form {
+  background: #fff;
+  width: 450px;
+  max-width: 95%;
+  border-radius: 20px;
+  padding: 40px 30px;
+  position: relative; /* ensures absolute elements like close-btn stay inside */
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+
+.premium-form h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.premium-form p {
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.premium-form input,
+.premium-form textarea {
+  width: 100%;
+  padding: 14px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.premium-form input:focus,
+.premium-form textarea:focus {
+  border-color: #ff4d4d;
+  outline: none;
+}
+
+.premium-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.premium-form button:hover {
+  background-color: #e64444;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px; /* distance from top inside the popup */
+  right: 15px; /* distance from right inside the popup */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333; /* optional: make it visible */
+  z-index: 10;
+}
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideInRight {
+  from {transform: translateX(50px); opacity: 0;}
+  to {transform: translateX(0); opacity: 1;}
+}
+
+/* Mobile: center the popup */
+@media (max-width: 768px) {
+  .premium-overlay {
+    justify-content: center;
+  }
+  .premium-form {
+    animation: slideInTop 0.4s ease-in-out;
+  }
+}
+
+@keyframes slideInTop {
+  from {transform: translateY(-30px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+/* Close tip cross on top-right */
+.close-tip {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  z-index: 10;
+  transition: color 0.2s;
+}
+
+.close-tip:hover {
+  color: #ff4d4d;
+}
+
+/* Popup overlay */
+.premium-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: flex-end; /* Right-aligned on desktop */
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Form container */
+.premium-form {
+  background: #fff;
+  width: 450px;
+  max-width: 95%;
+  border-radius: 20px;
+  padding: 40px 30px;
+  position: relative;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: slideInRight 0.4s ease-in-out;
+}
+
+.premium-form h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.premium-form p {
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.premium-form input,
+.premium-form textarea {
+  width: 100%;
+  padding: 14px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.premium-form input:focus,
+.premium-form textarea:focus {
+  border-color: #ff4d4d;
+  outline: none;
+}
+
+.premium-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.premium-form button:hover {
+  background-color: #e64444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideInRight {
+  from {transform: translateX(50px); opacity: 0;}
+  to {transform: translateX(0); opacity: 1;}
+}
+
+/* Mobile center */
+@media (max-width: 768px) {
+  .premium-overlay {
+    justify-content: center;
+  }
+  .premium-form {
+    animation: slideInTop 0.4s ease-in-out;
+  }
+}
+
+@keyframes slideInTop {
+  from {transform: translateY(-30px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+/* Overlay */
+.premium-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: flex-end; /* Slide from right on desktop */
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Form Container */
+.premium-form {
+  background: #fff;
+  width: 400px;
+  max-width: 95%;
+  border-radius: 12px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateX(100%);
+  animation: slideIn 0.3s forwards;
+}
+
+/* Small cross button (top-right) */
+.close-tip {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-tip:hover {
+  color: #e74c3c;
+}
+
+/* Form heading */
+.premium-form h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Subtitle */
+.premium-form p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inputs & textarea */
+.premium-form input,
+.premium-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.premium-form input:focus,
+.premium-form textarea:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+}
+
+/* Submit button */
+.premium-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.premium-form button[type="submit"]:hover {
+  background-color: #005ecc;
+  transform: translateY(-2px);
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile: center form */
+@media screen and (max-width: 768px) {
+  .premium-overlay {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .premium-form {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    padding: 20px;
+    animation: fadeIn 0.3s forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+.required {
+  color: red;
+  margin-left: 2px;
+}

@@ -1,0 +1,258 @@
+.policies-page {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner Section */
+.hero-banner {
+  width: 100%;
+  height: 300px; /* Banner size */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.banner-overlay h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* ✅ Text just below banner */
+.policies-intro {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.policies-intro p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Policies Section */
+.policies-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.policies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.policies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.policy-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  height: 220px;             /* 👈 fixed equal height */
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* aligns text properly */
+  gap: 10px;
+}
+
+.policy-card img.policy-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.policy-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #111;
+}
+
+.policy-card ul {
+  font-size: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.4;          /* neat spacing */
+}
+
+.policy-card li {
+  margin: 2px 0;
+  color: #333;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 200px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .policies-intro p {
+    font-size: 1rem;
+  }
+}
+.policies-intro p {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000;                  /* black text */
+  background: #fff59d;          /* lighter lemon yellow highlight */
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Creative Section */
+.creative-section {
+  background: #fff;                /* clean white */
+  padding: 40px 20px;              /* shorter padding for compact look */
+}
+
+.creative-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+/* Left Side: Text */
+.creative-text {
+  flex: 1;
+}
+
+.creative-text h2 {
+  font-size: 2rem;                 /* slightly smaller for compact */
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+.creative-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.creative-btn {
+  padding: 10px 20px;
+  background: #0073b0;             /* brand blue */
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.creative-btn:hover {
+  background: #005b87;
+}
+
+/* Right Side: Image */
+.creative-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.creative-image img {
+  max-width: 250px;               /* smaller image */
+  height: auto;
+}
+.creative-btn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #0073b0, #0099e6); /* modern gradient */
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.creative-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 115, 176, 0.3);
+}
+
+.creative-btn .arrow {
+  transition: transform 0.3s ease;
+}
+
+.creative-btn:hover .arrow {
+  transform: translateX(6px); /* smooth arrow slide */
+}
+/* More Info Section */
+.more-info-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.more-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 280px;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #0073b0;
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  color: #555;
+}

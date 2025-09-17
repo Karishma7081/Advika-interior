@@ -1,0 +1,472 @@
+/* =========================
+   Top Bar
+========================= */
+.top-bar {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 12px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.top-bar-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icons a {
+  color: #fff !important;       /* Pure white icons */
+  font-size: 14px;              /* Clear size */
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1); /* subtle circle bg */
+  transition: background 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff3b3b; /* red highlight */
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* =========================
+   Header
+========================= */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo img { height: 46px; cursor: pointer; }
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a,
+.nav-links span {
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s;
+}
+.nav-links a:hover,
+.nav-links span:hover { color: red; }
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* ✅ Green button */
+.consult-btn {
+  background: #25d366;
+  color: #fff;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+}
+.consult-btn:hover { background: #1ebe5d; }
+
+
+/* ================================
+   SEARCH OVERLAY
+================================ */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1000;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.close-search {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-overlay input {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.search-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.search-card {
+  padding: 20px;
+  border-radius: 8px;
+  background: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ================================
+   SUBMENU (Dropdown)
+================================ */
+.nav-item {
+  position: relative;
+}
+
+/* Hidden by default */
+.submenu-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  gap: 40px;
+  z-index: 1000;
+}
+
+/* Visible only when parent has .open */
+.nav-item.open .submenu-dropdown {
+  display: flex;
+}
+
+.submenu-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu-dropdown ul li {
+  padding: 6px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.submenu-dropdown ul li:hover {
+  color: #e63946; /* highlight color */
+}
+.nav-links a,
+.nav-links span {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.nav-links span:hover {
+  color: red;
+}
+/* Offerings Mega Menu */
+.nav-item.offerings {
+  position: relative;
+}
+
+.nav-item.offerings .mega-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 900px;
+  background: #fff;
+  display: none;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-item.offerings:hover .mega-dropdown {
+  display: flex;
+}
+
+.mega-col {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.mega-col h4 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.mega-col p {
+  margin: 6px 0;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.mega-col p:hover {
+  color: #e63946;
+}
+
+/* Explore Offerings Cards */
+/* ================================
+   EXPLORE OFFERINGS CARDS
+================================ */
+.mega-card {
+  display: flex;
+  align-items: center;         /* ✅ vertically center image + text */
+  gap: 12px;                   /* space between image and text */
+  margin-bottom: 15px;
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;          /* smoother corners */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06); /* subtle card shadow */
+}
+
+.mega-card:hover {
+  background: #fff;
+  transform: translateY(-2px); /* lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.mega-card img {
+  width: 80px;                /* ✅ bigger thumbnails */
+  height: 60px;               /* keep uniform aspect */
+  object-fit: cover;          /* no stretching */
+  border-radius: 6px;         /* rounded edges */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12); /* subtle shadow */
+  flex-shrink: 0;             /* image won’t shrink */
+}
+
+.mega-card h5 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.mega-card p {
+  font-size: 13px;
+  margin: 3px 0 0;
+  color: #666;
+}
+
+.mega-card:hover h5 {
+  color: #e63946; /* highlight title on hover */
+}
+/* =========================
+   Top Bar
+========================= */
+
+
+.social-icons a {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.top-bar-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.right-empty {
+  flex: 1;
+}
+
+/* =========================
+   Header & Nav
+========================= */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a,
+.nav-item > span {
+  cursor: pointer;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links a.active,
+.nav-item.active > span {
+  color: #a13d5d;
+}
+
+/* =========================
+   Submenus (Design Ideas & More)
+========================= */
+.submenu-dropdown {
+  display: flex;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.submenu-dropdown.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.submenu-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu-dropdown ul li {
+  padding: 6px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.submenu-dropdown ul li:hover {
+  color: #a13d5d;
+}
+
+/* =========================
+   Offerings Mega Menu
+========================= */
+.mega-dropdown {
+  display: flex;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.nav-item.offerings:hover .mega-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mega-dropdown .mega-col {
+  min-width: 200px;
+}
+
+.mega-dropdown .mega-col h4 {
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+}
+
+.mega-dropdown .mega-card {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.mega-dropdown .mega-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* =========================
+   Header Actions
+========================= */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ✅ Green consultation button */
+.consultation-btn {
+  background-color: #28a745; /* Green */
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.consultation-btn:hover {
+  background-color: #218838; /* Darker green */
+}
+
+/* =========================
+   Sticky Header
+========================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* keep it above other sections */
+  background: rgba(255, 255, 255, 0.95); /* semi-transparent white */
+  backdrop-filter: blur(8px); /* glass effect */
+  border-bottom: 1px solid #eaeaea;
+}

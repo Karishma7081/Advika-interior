@@ -1,0 +1,416 @@
+/* =========================
+   Main Footer
+========================= */
+.footer {
+  background: #222; /* lighter black */
+  color: #fff;
+  padding: 50px 50px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* =========================
+   Top Section (Logo + Socials)
+========================= */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 25px;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e74c3c; /* 🔹 Red brand color */
+  margin: 0;
+}
+
+.footer-socials a {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #f85c70; /* pink hover */
+}
+
+/* =========================
+   Middle Columns
+========================= */
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #f85c70;
+}
+
+/* =========================
+   Contact Info
+========================= */
+.footer-col ul li strong {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* =========================
+   App Download Section
+========================= */
+.footer-apps {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-apps p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.app-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.app-links img {
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.app-links img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Footer Credit
+========================= */
+.footer-credit {
+  background: #333; /* lighter black than footer */
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.footer-credit a {
+  color: #f85c70;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-credit a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 900px) {
+  .footer-columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .app-links {
+    justify-content: center;
+  }
+}
+/* =========================
+   App Download Section
+========================= */
+.footer-apps {
+  text-align: left;   /* ⬅ left aligned */
+  margin-top: 15px;
+}
+
+.footer-apps p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.app-links {
+  display: flex;
+  justify-content: flex-start; /* ⬅ aligns left */
+  gap: 15px;
+}
+
+.app-links img {
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.app-links img:hover {
+  transform: scale(1.05);
+}
+/* ========== Top Section (Above Footer) ========== */
+.footer-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  min-height: 450px;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+
+}
+
+.footer-top-left {
+  flex: 1;
+}
+.footer-top-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-top-right {
+  flex: 0 0 auto;        /* don’t stretch */
+  max-width: 420px;      /* 👈 smaller width */
+  width: 100%;
+  background-color: #4a2d49;
+  color: #fff;
+  padding: 2.rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+
+.footer-top-right h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.footer-top-right p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-form input[type="text"],
+.footer-form input[type="email"],
+.footer-form input[type="tel"] {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.footer-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+.footer-form button {
+  background-color: #f54c4c;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-form button:hover {
+  background-color: #e13b3b;
+}
+.footer-top-right {
+  flex: 0 0 auto;
+  max-width: 420px;
+  width: 100%;
+  background-color: #4a2d49;
+  color: #fff;
+  padding: 2.5rem 2.5rem;   /* ⬅ top/bottom padding bigger */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+}
+/* ========== Banner Wrapper ========== */
+.footer-top-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;   /* 👈 not full screen, looks like a banner */
+  margin: 1rem auto;   /* center it with top & bottom gap */
+  border-radius: 8px;
+  overflow: hidden;    /* clean edges */
+  min-height: 380px;   /* 👈 fixed banner-like height */
+}
+
+/* ========== Left Side (Image) ========== */
+.footer-top-left {
+  flex: 1;  /* take available space */
+}
+.footer-top-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== Right Side (Form Box) ========== */
+.footer-top-right {
+  flex: 0 0 380px;      /* 👈 fix width for form (not too big) */
+  background-color: #4a2d49;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-top-right h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+ color: #fbc02d;
+}
+.footer-top-right p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.footer-form input[type="text"],
+.footer-form input[type="email"],
+.footer-form input[type="tel"] {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.footer-form button {
+  background-color: #f54c4c;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-form button:hover {
+  background-color: #e13b3b;
+}
+.footer-top-right {
+  flex: 0 0 380px;      /* fixed width */
+  background-color: #4a2d49;
+  color: #fff;
+  padding: 1.2rem 2rem; /* ⬅ smaller top & bottom padding, normal left & right */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-section {
+  display: flex;
+  gap: 1rem; /* space between image and form */
+  padding: 1rem; /* reduces top/bottom/left/right padding */
+  margin: 0; /* remove extra margin */
+}
+
+.banner-section img {
+  width: 60%; /* adjust image width */
+  height: auto;
+  margin: 0; /* remove any default margin */
+}
+
+.banner-section .form-container {
+  width: 35%; /* adjust form width */
+  padding: 1rem; /* reduce form padding */
+  margin: 0;
+}
+/* ===== Banner Section ===== */
+.banner-section {
+  display: flex;
+  gap: 1rem;         /* space between image and form */
+  padding: 2rem 1rem; /* top & bottom 2rem, left & right 1rem */
+  margin: 0 auto;    /* center horizontally */
+  max-width: 1200px; /* optional, keeps banner not full screen */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Left Image */
+.banner-section img {
+  width: 60%;
+  height: auto;
+  margin: 0;
+  object-fit: cover;
+}
+
+/* Right Form Box */
+.banner-section .form-container {
+  width: 35%;
+  padding: 2rem; /* ⬅ same top & bottom padding as section */
+  margin: 0;
+  background-color: #4a2d49;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Optional: match top & bottom spacing of texts and buttons inside form */
+.banner-section .form-container h2,
+.banner-section .form-container p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

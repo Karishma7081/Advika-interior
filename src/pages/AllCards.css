@@ -1,0 +1,105 @@
+.all-cards-page {
+  padding: 60px 20px;
+  background: #fafafa;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.all-cards-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.all-cards-hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.all-cards-hero p {
+  font-size: 18px;
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.all-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.all-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.all-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.all-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.all-card h3 {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #333;
+}
+.all-cards-hero {
+  position: relative;
+  text-align: center;
+  padding: 140px 20px;
+  color: #fff;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+/* Background Image with dark overlay */
+.all-cards-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../assets/all-cards-hero.avif") center/cover no-repeat;
+  z-index: 0;
+}
+
+/* Hero Text Styles */
+.all-cards-hero h1,
+.all-cards-hero p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7); /* makes text strong */
+}
+
+.all-cards-hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #fff; /* stronger white */
+}
+
+.all-cards-hero p {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #f1f1f1; /* softer white for better contrast */
+}

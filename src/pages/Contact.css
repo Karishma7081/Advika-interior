@@ -1,0 +1,214 @@
+/* Contact Section - Full Width with Subtle Horizontal Padding */
+.contact-section {
+  padding: 40px 40px; /* slight padding left/right for breathing room */
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Optional: keep content nicely centered on very large screens */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1400px; /* keeps content from stretching too far */
+  margin: 0 auto; /* centers on large screens */
+  box-sizing: border-box;
+}
+
+.contact-section h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Form column */
+.contact-form {
+  flex: 2;
+  min-width: 350px;
+  margin: 0;
+}
+
+/* Details column */
+.contact-details {
+  flex: 1;
+  min-width: 250px;
+  font-size: 15px;
+  color: #000;
+  margin: 0;
+}
+
+/* Form fields layout */
+.contact-form .row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-form .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-submit {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-submit:hover {
+  background: #333;
+}
+
+/* Right column text */
+.contact-details h3 {
+  margin-top: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contact-details p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-details p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive fix: stack columns on small screens */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-wrap: wrap;
+    padding: 0; /* no extra padding on small devices */
+  }
+  .contact-section {
+    padding: 20px; /* slight padding for small screens */
+  }
+}
+.follow-us {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.follow-us h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #555;
+}
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.contact-details {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push follow-us to bottom */
+}
+
+.follow-us {
+  margin-top: auto; /* Keeps it at the bottom */
+}
+
+.follow-us h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin-right: 12px;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.social-icons a:hover {
+  color: #555;
+}
+.map-section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 0; /* space above/below */
+  background: #fff; /* optional, keeps consistent background */
+}
+
+.map-wrapper {
+  max-width: 1400px; /* same as contact section */
+  margin: 0 auto;
+  padding: 0 60px; /* left/right padding */
+  box-sizing: border-box;
+}
+.back-home-btn {
+  position: fixed;       /* stays visible while scrolling */
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: #c79c6e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.back-home-btn:hover {
+  background-color: #b07f4f;
+}
