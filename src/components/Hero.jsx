@@ -170,7 +170,7 @@ const FaqItem = ({ question, answer }) => {
 
         <div className="hero-row">
           <h1 className="hero-title">
-            Advika — Interior Designed for the Life You Deserve
+            Advika  Creations— Interior Designed for the Life You Deserve
           </h1>
           <button className="connect-button" onClick={() => navigate("/contact")}>
             Let’s Connect →
