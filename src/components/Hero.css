@@ -288,6 +288,12 @@ html, body {
   font-size: 0.95rem;
   color: #666;
 }
+.services-tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
 
 /* Scroll buttons */
 .scroll-btn {
